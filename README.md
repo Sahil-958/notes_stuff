@@ -2,10 +2,10 @@ I'm curious to know why you are here as my notes are just a xerox copy of the bo
 
 # QucikAccess To Pages 
 
-![Markmap:UML:UNIT3](https://sahil-958.github.io/notes_stuff/uml/unit_3/system_design.html)
+[Markmap:UML:UNIT3](https://sahil-958.github.io/notes_stuff/uml/unit_3/system_design.html)
 
-![Markmap:UML:UNIT3:Markup](https://sahil-958.github.io/notes_stuff/uml/unit_3/system_design.md)
+[Markmap:UML:UNIT3:Markup](https://sahil-958.github.io/notes_stuff/uml/unit_3/system_design.md)
 
-![Markmap:UML:UNIT4](https://sahil-958.github.io/notes_stuff/uml/unit_4/interaction_modeling.html)
+[Markmap:UML:UNIT4](https://sahil-958.github.io/notes_stuff/uml/unit_4/interaction_modeling.html)
 
-![Markmap:UML:UNIT4:Markup](https://sahil-958.github.io/notes_stuff/uml/unit_4/interaction_modeling.md)
+[Markmap:UML:UNIT4:Markup](https://sahil-958.github.io/notes_stuff/uml/unit_4/interaction_modeling.md)
