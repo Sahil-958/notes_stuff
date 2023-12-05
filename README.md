@@ -7,10 +7,14 @@ My notes are just a xerox copy of the books that are mentioned in my uni syllabu
 
 # QucikAccess To Pages 
 
-[Markmap:UML:UNIT3](https://sahil-958.github.io/notes_stuff/uml/unit_3/system_design_markmap.html)
+[UML:UNIT3](https://sahil-958.github.io/notes_stuff/uml/unit_3/system_design_markmap.html)
 
 [Markmap:UML:UNIT3:Markup](https://sahil-958.github.io/notes_stuff/uml/unit_3/system_design.html)
 
-[Markmap:UML:UNIT4](https://sahil-958.github.io/notes_stuff/uml/unit_4/interaction_modeling_markmap.html)
+[UML:UNIT4](https://sahil-958.github.io/notes_stuff/uml/unit_4/interaction_modeling_markmap.html)
 
 [Markmap:UML:UNIT4:Markup](https://sahil-958.github.io/notes_stuff/uml/unit_4/interaction_modeling.html)
+
+[Markmap:Software Engineering:UNIT3](https://sahil-958.github.io/notes_stuff/software_engineering/unit_3/software_testing.html)
+
+[Software Engineering:UNIT3](https://sahil-958.github.io/notes_stuff/software_engineering/unit_3/software_testing_markmap.html)
