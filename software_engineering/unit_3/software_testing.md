@@ -150,7 +150,14 @@ As integration testing proceeds, the number of regression tests can grow quite l
 
 ## Stress Testing
 
-- Earlier software testing steps resulted in thorough evaluation of normal program functions and performance. Stress tests are designed to confront programs with abnormal situations. In essence, the tester who performs stress testing asks: “How high can we crank this up before it fails?” Stress testing executes a system in a manner that demands resources in abnormal quantity, frequency, or volume. For example, (1) special tests may be designed that generate ten interrupts per second, when one or two is the average rate, (2) input data rates may be increased by an order of magnitude to determine how input functions will respond, (3) test cases that require maximum memory or other resources are executed, (4) test cases that may cause thrashing in a virtual operating system are designed, (5) test cases that may cause excessive hunting for disk-resident data are created. Essentially, the tester attempts to break the program.  A variation of stress testing is a technique called sensitivity testing. In some situations (the most common occur in mathematical algorithms), a very small range of data contained within the bounds of valid data for a program may cause extreme and even erroneous processing or profound performance degradation. Sensitivity testing attempts to uncover data combinations within valid input classes that may cause instability or improper processing.
+- Earlier software testing steps resulted in thorough evaluation of normal program functions and performance. Stress tests are designed to confront programs with abnormal situations. In essence, the tester who performs stress testing asks: “How high can we crank this up before it fails?” Stress testing executes a system in a manner that demands resources in abnormal quantity, frequency, or volume. For example, 
+  1) special tests may be designed that generate ten interrupts per second, when one or two is the average rate, 
+  2) input data rates may be increased by an order of magnitude to determine how input functions will respond, 
+  3) test cases that require maximum memory or other resources are executed, 
+  4) test cases that may cause thrashing in a virtual operating system are designed, 
+  5) test cases that may cause excessive hunting for disk-resident data are created. Essentially, the tester attempts to break the program.  
+
+- A variation of stress testing is a technique called sensitivity testing. In some situations (the most common occur in mathematical algorithms), a very small range of data contained within the bounds of valid data for a program may cause extreme and even erroneous processing or profound performance degradation. Sensitivity testing attempts to uncover data combinations within valid input classes that may cause instability or improper processing.
 
 ## Performance Testing
 
