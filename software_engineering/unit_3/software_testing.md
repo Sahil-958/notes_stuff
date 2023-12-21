@@ -64,11 +64,11 @@ Unit tests are illustrated schematically in Figure 17.3.
 A good design anticipates error conditions and establishes error-handling paths to reroute or cleanly terminate processing when an error does occur. Yourdon [You75] calls this approach antibugging. Unfortunately, there is a tendency to incorporate error handling into software and then never test it. A true story may serve to illustrate: A computer-aided design system was developed under contract. In one transaction processing module, a practical joker placed the following error handling message after a series of conditional tests that invoked various control flow branches: ERROR! THERE IS NO WAY YOU CAN GET HERE. This “error message” was uncovered by a customer during user training!  
 
 #### Among the potential errors that should be tested when error handling is evaluated are: 
-  1) error description is unintelligible, 
-  2) error noted does not correspond to error encountered, 
-  3) error condition causes system intervention prior to error handling, 
-  4) exception-condition processing is incorrect, or 
-  5) error description does not provide enough information to assist in the location of the cause of the error.
+  1. error description is unintelligible, 
+  2. error noted does not correspond to error encountered, 
+  3. error condition causes system intervention prior to error handling, 
+  4. exception-condition processing is incorrect, or 
+  5. error description does not provide enough information to assist in the location of the cause of the error.
 
 ### Unit-test Procedures
 
@@ -102,7 +102,13 @@ Referring to Figure 17.5, depth-first integration integrates all components on a
 
 5. Regression testing (discussed later in this section) may be conducted to ensure that new errors have not been introduced.  The process continues from step 2 until the entire program structure is built.
 
-The top-down integration strategy verifies major control or decision points early in the test process. In a “well-factored” program structure, decision making occurs at upper levels in the hierarchy and is therefore encountered first. If major control problems do exist, early recognition is essential. If depth-first integration is selected, a complete function of the software may be implemented and demonstrated. Early demonstration of functional capability is a confidence builder for all stakeholders.  Top-down strategy sounds relatively uncomplicated, but in practice, logistical problems can arise. The most common of these problems occurs when processing at low levels in the hierarchy is required to adequately test upper levels. Stubs replace low-level modules at the beginning of top-down testing; therefore, no significant data can flow upward in the program structure. As a tester, you are left with three choices: (1) delay many tests until stubs are replaced with actual modules, (2) develop stubs that perform limited functions that simulate the actual module, or (3) integrate the software from the bottom of the hierarchy upward.  The first approach (delay tests until stubs are replaced by actual modules) can cause you to lose some control over correspondence between specific tests and incorporation of specific modules. This can lead to difficulty in determining the cause of errors and tends to violate the highly constrained nature of the top-down approach. The second approach is workable but can lead to significant overhead, as stubs become more and more complex. The third approach, called bottom-up integration is discussed in the paragraphs that follow.
+The top-down integration strategy verifies major control or decision points early in the test process. In a “well-factored” program structure, decision making occurs at upper levels in the hierarchy and is therefore encountered first. If major control problems do exist, early recognition is essential. If depth-first integration is selected, a complete function of the software may be implemented and demonstrated. Early demonstration of functional capability is a confidence builder for all stakeholders.  Top-down strategy sounds relatively uncomplicated, but in practice, logistical problems can arise. The most common of these problems occurs when processing at low levels in the hierarchy is required to adequately test upper levels. Stubs replace low-level modules at the beginning of top-down testing; therefore, no significant data can flow upward in the program structure. As a tester, you are left with three choices: 
+
+1. delay many tests until stubs are replaced with actual modules, 
+2. develop stubs that perform limited functions that simulate the actual module, or 
+3. integrate the software from the bottom of the hierarchy upward.  
+
+The first approach (delay tests until stubs are replaced by actual modules. can cause you to lose some control over correspondence between specific tests and incorporation of specific modules. This can lead to difficulty in determining the cause of errors and tends to violate the highly constrained nature of the top-down approach. The second approach is workable but can lead to significant overhead, as stubs become more and more complex. The third approach, called bottom-up integration is discussed in the paragraphs that follow.
 
 ### Bottom-Up Integration
 
@@ -151,11 +157,11 @@ As integration testing proceeds, the number of regression tests can grow quite l
 ## Stress Testing
 
 - Earlier software testing steps resulted in thorough evaluation of normal program functions and performance. Stress tests are designed to confront programs with abnormal situations. In essence, the tester who performs stress testing asks: “How high can we crank this up before it fails?” Stress testing executes a system in a manner that demands resources in abnormal quantity, frequency, or volume. For example, 
-  1) special tests may be designed that generate ten interrupts per second, when one or two is the average rate, 
-  2) input data rates may be increased by an order of magnitude to determine how input functions will respond, 
-  3) test cases that require maximum memory or other resources are executed, 
-  4) test cases that may cause thrashing in a virtual operating system are designed, 
-  5) test cases that may cause excessive hunting for disk-resident data are created. Essentially, the tester attempts to break the program.  
+  1. special tests may be designed that generate ten interrupts per second, when one or two is the average rate, 
+  2. input data rates may be increased by an order of magnitude to determine how input functions will respond, 
+  3. test cases that require maximum memory or other resources are executed, 
+  4. test cases that may cause thrashing in a virtual operating system are designed, 
+  5. test cases that may cause excessive hunting for disk-resident data are created. Essentially, the tester attempts to break the program.  
 
 - A variation of stress testing is a technique called sensitivity testing. In some situations (the most common occur in mathematical algorithms), a very small range of data contained within the bounds of valid data for a program may cause extreme and even erroneous processing or profound performance degradation. Sensitivity testing attempts to uncover data combinations within valid input classes that may cause instability or improper processing.
 
@@ -169,13 +175,13 @@ As integration testing proceeds, the number of regression tests can grow quite l
  
 #### Using white-box testing methods, you can derive test cases that
 
-1) guarantee that all independent paths within a module have been exercised at least once, 
+1. guarantee that all independent paths within a module have been exercised at least once, 
 
-2) exercise all logical decisions on their true and false sides, 
+2. exercise all logical decisions on their true and false sides, 
 
-3) execute all loops at their boundaries and within their operational bounds,
+3. execute all loops at their boundaries and within their operational bounds,
 
-4) and exercise internal data structures to ensure their validity.
+4. and exercise internal data structures to ensure their validity.
 
 ## Baisis Path Testing
 
@@ -187,11 +193,11 @@ As integration testing proceeds, the number of regression tests can grow quite l
  
 #### Black-box testing attempts to find errors in the following categories: 
 
-1) incorrect or missing functions, 
-2) interface errors, 
-3) errors in data structures or external database access, 
-4) behavior or performance errors, and 
-5) initialization and termination errors.  
+1. incorrect or missing functions, 
+2. interface errors, 
+3. errors in data structures or external database access, 
+4. behavior or performance errors, and 
+5. initialization and termination errors.  
 
 Unlike white-box testing, which is performed early in the testing process, blackbox testing tends to be applied during later stages of testing (see Chapter 17). Because black-box testing purposely disregards control structure, attention is focused on the information domain. 
 
@@ -205,4 +211,6 @@ Unlike white-box testing, which is performed early in the testing process, black
 - What data rates and data volume can the system tolerate?
 - What effect will specific combinations of data have on system operation?
  
-By applying black-box techniques, you derive a set of test cases that satisfy the following criteria [Mye79]: (1) test cases that reduce, by a count that is greater than one, the number of additional test cases that must be designed to achieve reasonable testing, and (2) test cases that tell you something about the presence or absence of classes of errors, rather than an error associated only with the specific test at hand.
+By applying black-box techniques, you derive a set of test cases that satisfy the following criteria [Mye79]: 
+1. test cases that reduce, by a count that is greater than one, the number of additional test cases that must be designed to achieve reasonable testing, and 
+2. test cases that tell you something about the presence or absence of classes of errors, rather than an error associated only with the specific test at hand.
